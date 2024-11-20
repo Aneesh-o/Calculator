@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Css link -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="textSpace" >
+            <input id="textSpace"  type="text" placeholder="0" disabled>
+        </div>
+        <div class="rows">
+            <div class="Row">
+                <button onclick="zero()">AC</button>
+                <button onclick="calculation('/')">/</button>
+                <button onclick="calculation('*')">*</button>
+                <button onclick="remove()">x</button>
+            </div>
+            <div class="Row">
+                <button onclick="display('7')">7</button>
+                <button onclick="display('8')">8</button>
+                <button onclick="display('9')">9</button>
+                <button onclick="calculation('+')">+</button>
+            </div>
+            <div class="Row">
+                <button onclick="display('4')">4</button>
+                <button onclick="display('5')">5</button>
+                <button onclick="display('6')">6</button>
+                <button onclick="calculation('-')">-</button>
+            </div>
+            <div class="Row">
+                <button onclick="display('1')">1</button>
+                <button onclick="display('2')">2</button>
+                <button onclick="display('3')">3</button>
+                <button class="plus" onclick="result()">enter</button>
+            </div>
+            <div class="Row">
+                <button class="zero" onclick="display('0')">0</button>
+                <button onclick="calculation('.')">.</button>
+            </div>
+        </div>
+        </div>
+</body>
+<!-- Js link -->
+<script src="./main.js"></script>
+</html>
